@@ -7,5 +7,53 @@
 
             <script src="./script.js" defer></script>
       </head>
-      <body></body>
+      <body>
+            <h1>Rock Paper Scissors</h1>
+            <h2 id="round">Round 1</h2>
+            <p class="score">You are won 0 times</p>
+
+            <div class="timer_wrapper">
+                  <p>Timer:</p>
+                  <div id="timer">3</div>
+            </div>
+
+            <div class="computer_choice">
+                  <p>COMPUTER</p>
+                  <img src="" alt="" class="waiting" />
+                  <img src="" alt="rock" class="choice hiden" />
+                  <img src="" alt="paper" class="choice hiden" />
+                  <img src="" alt="scissors" class="choice hiden" />
+            </div>
+
+            <div class="player_choice">
+                  <p>PLAYER</p>
+                  <img src="" alt="" class="waiting" />
+                  <img src="" alt="rock" class="choice hiden" />
+                  <img src="" alt="paper" class="choice hiden" />
+                  <img src="" alt="scissors" class="choice hiden" />
+            </div>
+
+            <div>
+                  <p>Your choice</p>
+                  <li id="player_buttons">
+                        <ul>
+                              <button id="p_rock" class="palyer_choice_button">Rock</button>
+                        </ul>
+                        <ul>
+                              <button id="p_paper" class="palyer_choice_button">Paper</button>
+                        </ul>
+                        <ul>
+                              <button id="p_scissors" class="palyer_choice_button">Scissors</button>
+                        </ul>
+                  </li>
+            </div>
+      </body>
 </html>
+
+<!-- We need:
+ 1. Round counter
+ 2  Score screen
+ 3  Timer screen
+ 4. Computer choice screen
+ 5. Player buttons (3)
+  -->
