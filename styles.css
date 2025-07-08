@@ -1,0 +1,26 @@
+body {
+      text-align: center;
+      font-family: "Josefin Slab", serif;
+
+      outline: 1px solid red;
+}
+
+.hidden {
+      display: none;
+}
+
+img {
+      width: 600px;
+
+      border-radius: 5%;
+}
+
+.main_title {
+      font-size: 80px;
+
+      margin-bottom: 60px;
+}
+
+.round {
+      font-size: 40px;
+}
