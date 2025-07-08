@@ -19,48 +19,48 @@
             <h2 class="round" id="round">Round 1</h2>
 
             <div class="score">
-                  <p>Player: 0</p>
-                  <p>Computer: 0</p>
+                  <p id="computer_score">Computer: 0</p>
+                  <p id="player_score">Player: 0</p>
             </div>
 
-            <div class="timer_wrapper">
-                  <p>Timer:</p>
-                  <div id="timer">3</div>
+            <div class="game_field">
+                  <div class="computer_choice">
+                        <h2>COMPUTER</h2>
+                        <img src="./images/computer_head.png" alt="" class="waiting" />
+                        <img src="./images/computer_rock.png" alt="rock" class="choice hidden" />
+                        <img src="./images/computer_paper.png" alt="paper" class="choice hidden" />
+                        <img
+                              src="./images/computer_scissors.png"
+                              alt="scissors"
+                              class="choice hidden"
+                        />
+                  </div>
+                  <div class="player_choice">
+                        <h2>PLAYER</h2>
+                        <img src="./images/human_head.png" alt="" class="waiting" />
+                        <img src="./images/rock.png" alt="rock" class="choice hidden" />
+                        <img src="./images/paper.png" alt="paper" class="choice hidden" />
+                        <img src="./images/scissors.png" alt="scissors" class="choice hidden" />
+                  </div>
             </div>
 
-            <div class="computer_choice">
-                  <p>COMPUTER</p>
-                  <img src="./images/computer_head.png" alt="" class="waiting" />
-                  <img src="./images/computer_rock.png" alt="rock" class="choice hidden" />
-                  <img src="./images/computer_paper.png" alt="paper" class="choice hidden" />
-                  <img src="./images/computer_scissors.png" alt="scissors" class="choice hidden" />
-            </div>
-            ./
-            <div class="player_choice">
-                  <p>PLAYER</p>
-                  <img src="./images/human_head.png" alt="" class="waiting" />
-                  <img src="./images/rock.png" alt="rock" class="choice hidden" />
-                  <img src="./images/paper.png" alt="paper" class="choice hidden" />
-                  <img src="./images/scissors.png" alt="scissors" class="choice hidden" />
-            </div>
-
-            <div>
-                  <p>Your choice</p>
-                  <li id="player_buttons">
-                        <ul>
+            <div class="player_choice_buttons">
+                  <h2 class="">Your choice</h2>
+                  <ul id="player_buttons">
+                        <li>
                               <button id="p_rock" class="palyer_choice_button">Rock</button>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                               <button id="p_paper" class="palyer_choice_button">Paper</button>
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                               <button id="p_scissors" class="palyer_choice_button">Scissors</button>
-                        </ul>
-                  </li>
+                        </li>
+                  </ul>
             </div>
       </body>
 </html>
-
+`
 <!-- We need:
  1. Round counter
  2  Score screen
