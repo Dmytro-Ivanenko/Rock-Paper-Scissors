@@ -3,6 +3,11 @@ body {
       font-family: "Josefin Slab", serif;
 }
 
+* {
+      transition-property: all;
+      transition-duration: 0.5s;
+}
+
 .hidden {
       display: none;
 }
@@ -45,8 +50,6 @@ h2 {
       justify-content: center;
       gap: 20%;
 
-      width: 100%;
-
       margin-right: auto;
       margin-left: auto;
 
@@ -54,7 +57,7 @@ h2 {
 }
 
 button {
-      margin-top: 60px;
+      margin-top: 40px;
       background-color: transparent;
       border: none;
       cursor: pointer;
