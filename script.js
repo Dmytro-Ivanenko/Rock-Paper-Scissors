@@ -1,9 +1,13 @@
 // 1. Round counter
 //  2  Score screen
 //  5. Player buttons (3)
+// We are playing only 5 rounds!
+
 let round = 1;
 let comp_score = 0;
 let player_score = 0;
+let compHand = "";
+let playerHand = "";
 const handArr = ["rock", "paper", "scissors"];
 
 //
@@ -18,7 +22,6 @@ const playerScoreElem = document.querySelector("#player_score");
 
 // Functions
 function changeRound() {
-      round++;
       roundElem.textContent = `Round ${round}`;
 }
 
@@ -38,8 +41,31 @@ function getMathRandom(max) {
       return Math.floor(Math.random() * max);
 }
 
-function whoIsWinner(player) {
-      let compHand = handArr[getMathRandom(3)];
+function whoIsWinner() {
+      compHand = handArr[getMathRandom(3)];
 
-      // add logic
+      if (playerHand == compHand) {
+            return null;
+      }
+      if (playerHand == "rock") {
+            if (compHand == "scissors") {
+                  return "player";
+            }
+            return "computer";
+      } else if (playerHand == "scissors") {
+            if (compHand == "rock") {
+                  return "computer";
+            }
+            return "player";
+      }
+}
+
+// add image logic
+
+function changeImg() {}
+
+function playGame() {}
+
+for (let round = 0; round <= 5; round++) {
+      playGame();
 }
