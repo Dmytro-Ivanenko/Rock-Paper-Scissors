@@ -97,22 +97,21 @@ function changeImg(changeType) {
       }
 }
 
-function updateHands() {
-      changeImg("newGame");
-      playerHand = hand;
-      compHand = getNewCompHand();
-      changeImg("hands");
-}
-
 function playGame(hand) {
+      // debugger;
       changeRound();
 
       if (round == 1) {
-            updateHands();
+            changeImg("newGame");
+            playerHand = hand;
+            compHand = getNewCompHand();
+            changeImg("hands");
             addScore(whoIsWinner());
       } else if (round <= 5) {
-            updateHands();
-
+            changeImg("hands"); // hide last hands first
+            playerHand = hand;
+            compHand = getNewCompHand();
+            changeImg("hands"); // show new hands
             addScore(whoIsWinner());
       } else {
             alert("New Game!");
